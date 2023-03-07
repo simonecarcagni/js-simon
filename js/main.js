@@ -31,21 +31,24 @@ containerDom.innerHTML = newNumberArray2;
 
 setTimeout(function(){
     
-
-
-    let numberWritten = prompt(`Inserisci i numeri appena visti`);
-    
-
     containerDom.classList.add("d-none");
 
-    if (numberWritten == newNumberArray2) {
-        alert(`Ha vinto il giocatore`);
-    } else {
-        alert(`Ha perso il giocatore`)
-    }
+    
 
 }, 3000)
 
+
+setTimeout(function () {
+
+    let numberWritten = prompt(`Inserisci i numeri appena visti`);
+
+    if (numberWritten == newNumberArray2) {
+        console.log(`Ha vinto il giocatore`);
+    } else {
+        console.log(`Ha perso il giocatore`);
+    }
+
+}, 5000)
 
 
 
